@@ -1,15 +1,16 @@
 package main
 
 import (
-	"aws-ses-sender/api"
-	"aws-ses-sender/cmd"
-	"aws-ses-sender/config"
 	"context"
 	"log"
 	"os"
 	"os/signal"
 	"syscall"
 	"time"
+
+	"aws-ses-sender/api"
+	"aws-ses-sender/cmd"
+	"aws-ses-sender/config"
 
 	"github.com/getsentry/sentry-go"
 )

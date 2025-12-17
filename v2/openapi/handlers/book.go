@@ -45,7 +45,8 @@ func GetAllBooks(ctx context.Context, _ *struct{}) (*GetAllBooksResponse, error)
 
 func GetBookByID(ctx context.Context, params *struct {
 	ID string `path:"id"`
-}) (*GetBookByIDResponse, error) {
+},
+) (*GetBookByIDResponse, error) {
 	db := database.DBConn
 
 	book := new(models.Book)
@@ -78,7 +79,8 @@ func RegisterBook(ctx context.Context, input *struct{ Body RegisterBookDto }) (*
 func UpdateBook(ctx context.Context, input *struct {
 	ID   string `path:"id"`
 	Body RegisterBookDto
-}) (*EmptyResponse, error) {
+},
+) (*EmptyResponse, error) {
 	db := database.DBConn
 
 	book := new(models.Book)
@@ -101,7 +103,8 @@ func UpdateBook(ctx context.Context, input *struct {
 
 func DeleteBook(ctx context.Context, params *struct {
 	ID string `path:"id"`
-}) (*EmptyResponse, error) {
+},
+) (*EmptyResponse, error) {
 	db := database.DBConn
 
 	book := new(models.Book)

@@ -9,7 +9,6 @@ import (
 )
 
 func main() {
-
 	ctx := context.Background()
 
 	// Runs a Fiber instance as a Parsley-enabled app

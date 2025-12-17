@@ -1,9 +1,10 @@
 package repository
 
 import (
-	"email-verification/domain"
 	"fmt"
 	"sync"
+
+	"email-verification/domain"
 )
 
 type MemoryRepository struct {

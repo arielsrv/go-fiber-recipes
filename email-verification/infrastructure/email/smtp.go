@@ -1,9 +1,10 @@
 package email
 
 import (
-	"email-verification/config"
 	"fmt"
 	"net/smtp"
+
+	"email-verification/config"
 )
 
 type SMTPService struct {

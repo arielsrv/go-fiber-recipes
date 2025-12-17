@@ -1,12 +1,13 @@
 package cmd
 
 import (
-	"aws-ses-sender/config"
-	"aws-ses-sender/model"
 	"context"
 	"log"
 	"strconv"
 	"time"
+
+	"aws-ses-sender/config"
+	"aws-ses-sender/model"
 )
 
 // RunScheduler runs the scheduler

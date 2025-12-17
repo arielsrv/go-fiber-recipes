@@ -1,13 +1,14 @@
 package cmd
 
 import (
-	"aws-ses-sender/config"
-	"aws-ses-sender/model"
-	"aws-ses-sender/pkg/aws"
 	"context"
 	"log"
 	"strconv"
 	"time"
+
+	"aws-ses-sender/config"
+	"aws-ses-sender/model"
+	"aws-ses-sender/pkg/aws"
 )
 
 var reqChan = make(chan *model.Request, 1000)

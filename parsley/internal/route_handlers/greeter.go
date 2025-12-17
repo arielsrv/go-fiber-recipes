@@ -20,7 +20,6 @@ func (h *greeterRouteHandler) Register(app *fiber.App) {
 
 // HandleSayHelloRequest Handles "GET /say-hello" requests.
 func (h *greeterRouteHandler) HandleSayHelloRequest(ctx fiber.Ctx) error {
-
 	name := ctx.Query("name")
 
 	politeFlag := ctx.Query("polite", defaultPoliteFlag)

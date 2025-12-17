@@ -1,8 +1,6 @@
 package api
 
 import (
-	"aws-ses-sender/config"
-	"aws-ses-sender/model"
 	"bytes"
 	"encoding/json"
 	"fmt"
@@ -14,6 +12,9 @@ import (
 	"strconv"
 	"strings"
 	"time"
+
+	"aws-ses-sender/config"
+	"aws-ses-sender/model"
 
 	"github.com/gofiber/fiber/v3"
 )

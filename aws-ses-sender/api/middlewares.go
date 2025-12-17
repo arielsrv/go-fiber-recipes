@@ -1,8 +1,9 @@
 package api
 
 import (
-	"aws-ses-sender/config"
 	"crypto/subtle"
+
+	"aws-ses-sender/config"
 
 	"github.com/gofiber/fiber/v3"
 )

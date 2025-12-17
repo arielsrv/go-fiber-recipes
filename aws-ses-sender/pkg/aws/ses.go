@@ -1,10 +1,11 @@
 package aws
 
 import (
-	"aws-ses-sender/config"
 	"context"
 	"fmt"
 	"strconv"
+
+	"aws-ses-sender/config"
 
 	"github.com/aws/aws-sdk-go-v2/aws"
 	awsConfig "github.com/aws/aws-sdk-go-v2/config"
