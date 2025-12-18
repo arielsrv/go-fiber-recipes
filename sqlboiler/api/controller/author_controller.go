@@ -7,8 +7,8 @@ import (
 	"fiber-sqlboiler/database"
 	"fiber-sqlboiler/models"
 
+	"github.com/aarondl/sqlboiler/v4/boil"
 	"github.com/gofiber/fiber/v3"
-	"github.com/volatiletech/sqlboiler/v4/boil"
 )
 
 func GetAuthors(c fiber.Ctx) error {
