@@ -1,6 +1,6 @@
 module fiber-sqlboiler
 
-go 1.25.0
+go 1.25.5
 
 require (
 	github.com/aarondl/null/v8 v8.1.3

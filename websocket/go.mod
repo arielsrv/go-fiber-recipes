@@ -1,6 +1,6 @@
 module main
 
-go 1.25.0
+go 1.25.5
 
 require (
 	github.com/gofiber/contrib/v3/websocket v1.0.0-rc.1

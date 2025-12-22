@@ -1,6 +1,6 @@
 module recipes
 
-go 1.25.1
+go 1.25.5
 
 tool (
 	github.com/boumenot/gocover-cobertura

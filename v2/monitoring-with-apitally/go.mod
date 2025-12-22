@@ -1,6 +1,6 @@
 module main
 
-go 1.25.0
+go 1.25.5
 
 require (
 	github.com/apitally/apitally-go/fiber v0.9.0

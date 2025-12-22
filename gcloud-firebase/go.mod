@@ -1,6 +1,6 @@
 module github.com/gofiber/gcloud-firebase
 
-go 1.25.0
+go 1.25.5
 
 require (
 	firebase.google.com/go v3.13.0+incompatible
