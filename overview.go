@@ -20,6 +20,7 @@ func main() {
 	// fetch current file directory
 	root, _ := os.Getwd()
 	toc := ""
+
 	var missingReadmeDirs []string
 	var missingTitleDirs []string
 	var missingKeywordsDirs []string
