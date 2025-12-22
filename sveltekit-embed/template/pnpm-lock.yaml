@@ -9,8 +9,8 @@ devDependencies:
     specifier: ^1.6.12
     version: 1.7.4
   '@skeletonlabs/skeleton':
-    specifier: ^1.12.0
-    version: 1.12.0(svelte@4.2.20)
+    specifier: ^2.11.0
+    version: 2.11.0(svelte@4.2.20)
   '@sveltejs/adapter-static':
     specifier: ^3.0.6
     version: 3.0.10(@sveltejs/kit@2.49.2)
@@ -636,10 +636,10 @@ packages:
     dev: true
     optional: true
 
-  /@skeletonlabs/skeleton@1.12.0(svelte@4.2.20):
-    resolution: {integrity: sha512-NCGy6WT3LUqu6EaFEG7J6lFQNB/DHlqFQpXMWkSpwdZIZ005OEVoZznNgdATYdTet++nS6LymBGVUQK00z82gw==}
+  /@skeletonlabs/skeleton@2.11.0(svelte@4.2.20):
+    resolution: {integrity: sha512-ORMZYACsIlfKyBx2ZIHBy7zE877t99fxU7LzcY1dveVmn2//+OeqnbQb5RryNILsMR62Tuu1VLnCu01/ByHlbQ==}
     peerDependencies:
-      svelte: ^3.56.0 || ^4.0.0
+      svelte: ^3.56.0 || ^4.0.0 || ^5.0.0
     dependencies:
       esm-env: 1.0.0
       svelte: 4.2.20
