@@ -215,8 +215,7 @@ updates:
         patterns:
           - "vite"
           - "parcel"
-  - package-ecosystem: "npm"
-    # pnpm projects - Dependabot uses npm ecosystem for pnpm
+  - package-ecosystem: "pnpm"
     open-pull-requests-limit: 15
     directories:
       - "/entgo-sveltekit/template"
