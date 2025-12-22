@@ -215,7 +215,7 @@ updates:
         patterns:
           - "vite"
           - "parcel"
-  - package-ecosystem: "pnpm"
+  - package-ecosystem: "npm"
     open-pull-requests-limit: 15
     directories:
       - "/entgo-sveltekit/template"
