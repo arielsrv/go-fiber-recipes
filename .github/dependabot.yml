@@ -173,7 +173,8 @@ updates:
   - package-ecosystem: "npm"
     open-pull-requests-limit: 15
     directories:
-      - "**/*"
+      - "/react-router/web"
+      - "/template-asset-bundling"
     labels:
       - "🤖 Dependencies"
     schedule:
@@ -214,6 +215,30 @@ updates:
         patterns:
           - "vite"
           - "parcel"
+  - package-ecosystem: "npm"
+    # pnpm projects - Dependabot uses npm ecosystem for pnpm
+    open-pull-requests-limit: 15
+    directories:
+      - "/entgo-sveltekit/template"
+      - "/sveltekit-embed/template"
+    labels:
+      - "🤖 Dependencies"
+    schedule:
+      interval: "daily"
+    groups:
+      svelte-modules:
+        patterns:
+          - "svelte"
+          - "@sveltejs/**"
+      tailwind-modules:
+        patterns:
+          - "tailwindcss"
+          - "@tailwindcss/*"
+      typescript-modules:
+        patterns:
+          - "typescript"
+          - "tslib"
+          - "@typescript-eslint/*"
   - package-ecosystem: "docker"
     open-pull-requests-limit: 15
     directories:
