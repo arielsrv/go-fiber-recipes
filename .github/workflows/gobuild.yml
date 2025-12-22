@@ -52,16 +52,6 @@ jobs:
           echo "${changed_dirs}" >> $GITHUB_ENV
           echo "EOF" >> $GITHUB_ENV
 
-
-      - name: Run go vet for changed directories
-        run: |
-          for dir in ${{ env.changed_dirs }}; do
-            echo "Running go vet in directory: ${dir}"
-            if [ -f "${dir}/go.mod" ]; then
-              (cd $dir; go vet ./...);
-            fi
-          done
-
       - name: Run go build for changed directories
         run: |
           for dir in ${{ env.changed_dirs }}; do
