@@ -6,6 +6,7 @@ import (
 
 	"docker-mariadb-clean-arch/internal/auth"
 	"docker-mariadb-clean-arch/internal/city"
+	"docker-mariadb-clean-arch/internal/middleware"
 	"docker-mariadb-clean-arch/internal/misc"
 	"docker-mariadb-clean-arch/internal/user"
 
@@ -18,7 +19,6 @@ import (
 	"github.com/gofiber/fiber/v3/middleware/limiter"
 	"github.com/gofiber/fiber/v3/middleware/logger"
 	"github.com/gofiber/fiber/v3/middleware/recover"
-	"github.com/gofiber/fiber/v3/middleware/requestid"
 )
 
 // Run our Fiber webserver.
@@ -51,7 +51,7 @@ func Run() {
 	}))
 	app.Use(logger.New())
 	app.Use(recover.New())
-	app.Use(requestid.New())
+	app.Use(middleware.NewRequestID())
 
 	// Create repositories.
 	cityRepository := city.NewCityRepository(mariadb)
