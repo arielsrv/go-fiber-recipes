@@ -11,7 +11,7 @@ import (
 	"github.com/gofiber/fiber/v3/middleware/csrf"
 	"github.com/gofiber/fiber/v3/middleware/recover"
 	"github.com/gofiber/fiber/v3/middleware/session"
-	"github.com/gofiber/utils/v2"
+	"github.com/google/uuid"
 )
 
 // region struct definitions
@@ -51,7 +51,7 @@ var csrfProtection = csrf.New(csrf.Config{
 	CookieName:     "csrf_",
 	CookieSameSite: "Strict",
 	IdleTimeout:    1 * time.Hour,
-	KeyGenerator:   utils.UUID,
+	KeyGenerator:   uuid.NewString,
 })
 
 // RegisterRoutes registers the routes and middlewares necessary for the server
