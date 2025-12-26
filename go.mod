@@ -19,7 +19,6 @@ require (
 	codeberg.org/chavacava/garif v0.2.0 // indirect
 	dev.gaijin.team/go/exhaustruct/v4 v4.0.0 // indirect
 	dev.gaijin.team/go/golib v0.6.0 // indirect
-	github.com/4meepo/tagalign v1.4.3 // indirect
 	github.com/Abirdcfly/dupword v0.1.7 // indirect
 	github.com/AdminBenni/iota-mixing v1.0.0 // indirect
 	github.com/AlecAivazis/survey/v2 v2.3.7 // indirect
@@ -39,7 +38,6 @@ require (
 	github.com/alecthomas/units v0.0.0-20240927000941-0f3dac36c52b // indirect
 	github.com/alexkohler/nakedret/v2 v2.0.6 // indirect
 	github.com/alexkohler/prealloc v1.0.0 // indirect
-	github.com/alfatraining/structtag v1.0.0 // indirect
 	github.com/alingse/asasalint v0.0.11 // indirect
 	github.com/alingse/nilnesserr v0.2.0 // indirect
 	github.com/apex/log v1.9.0 // indirect
@@ -99,7 +97,7 @@ require (
 	github.com/go-viper/mapstructure/v2 v2.4.0 // indirect
 	github.com/go-xmlfmt/xmlfmt v1.1.3 // indirect
 	github.com/gobwas/glob v0.2.3 // indirect
-	github.com/godoc-lint/godoc-lint v0.10.2 // indirect
+	github.com/godoc-lint/godoc-lint v0.11.0 // indirect
 	github.com/gofrs/flock v0.13.0 // indirect
 	github.com/golang/protobuf v1.5.3 // indirect
 	github.com/golangci/asciicheck v0.5.0 // indirect
